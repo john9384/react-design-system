@@ -1,4 +1,4 @@
-import { ImageAssets } from 'assets/images/ImageAssets';
+
 import { Colors } from 'constants/Colors';
 
 const lightThemeColors = {
@@ -34,7 +34,6 @@ const lightThemeColors = {
   inputBackground: Colors.LIGHT_BODY_BACKGROUND,
   inputPlaceholderText: Colors.GRAY600,
   inputText: Colors.GRAY900,
-  logo: ImageAssets.LOGO_WHITE,
   mobileTableRowBackground: '#f8f9fa',
   primary: Colors.PRIMARY,
   scrollBarTrack: Colors.BACKGROUND_BODY,
@@ -46,7 +45,6 @@ const lightThemeColors = {
   themedInputText: Colors.GRAY100,
   themedPlaceholderText: Colors.GRAY600,
   variationTableHeaderBG: Colors.GRAY200,
-  businessLogoPlaceholder: ImageAssets.BUSINESS_LOGO_PLACEHOLDER_BLUE,
 };
 
 const darkThemeColors: ColorTheme = {
@@ -82,7 +80,6 @@ const darkThemeColors: ColorTheme = {
   errorInputText: Colors.GRAY700,
   dateMonthName: '#7d7c83',
   colorSearch: '#2a2a31',
-  logo: ImageAssets.LOGO_DARK,
   mobileTableRowBackground: '#2a2a31',
   datePickerDisabledDayText: Colors.RED200,
   stepIndicatorColor: Colors.GRAY500,
@@ -94,125 +91,14 @@ const darkThemeColors: ColorTheme = {
   tagTextColor: Colors.WHITE,
   variationTableHeaderBG: Colors.GRAY700,
   scrollBarTrack: Colors.DARK_BACKGROUND,
-  businessLogoPlaceholder: ImageAssets.BUSINESS_LOGO_PLACEHOLDER_WHITE,
-};
-
-const lightThemeShadow = {
-  small: '0px 0px 10px 1px rgba(0, 0, 0, 0.02)',
-  regular: '0px 0px 10px 1px rgba(232, 232, 232, 0.5)',
-  large: '0px 0px 5px 1px #E8E8E8',
-};
-
-const darkThemeShadow: ShadowTheme = {
-  small: '0px 0px 5px 1px rgba(0, 0, 0, 0.05)',
-  regular: '0px 0px 15px 1px rgba(0, 0, 0, 0.5)',
-  large: '0px 0px 5px 1px #E8E8E8',
-};
-
-const ltr = {
-  direction: 'ltr',
-
-  right: 'right',
-  left: 'left',
-
-  'margin-right': 'margin-right',
-  'margin-left': 'margin-left',
-
-  'padding-left': 'padding-left',
-  'padding-right': 'padding-right',
-
-  'border-top-left-radius': 'border-top-left-radius',
-  'border-bottom-left-radius': 'border-bottom-left-radius',
-
-  'border-top-right-radius': 'border-top-right-radius',
-  'border-bottom-right-radius': 'border-bottom-right-radius',
-
-  'border-left': 'border-left',
-  'border-right': 'border-right',
-
-  translate: 'translate(-50%, -50%);',
-  mirrorY: 'scale(1, 1)',
-
-  'border-right-color': 'border-right-color',
-
-  'transform-sidebar': 'rotate(90deg)',
-
-  'flex-flow': 'row nowrap',
-  row: 'row',
-
-  'sidebar-close': 'translateX(0)',
-  'sidebar-no-desktop': 'translateX(calc(0%))',
-  '-': '-',
-};
-
-const rtl: Direction = {
-  direction: 'rtl',
-
-  right: 'left',
-  left: 'right',
-
-  'margin-right': 'margin-left',
-  'margin-left': 'margin-right',
-
-  'padding-left': 'padding-right',
-  'padding-right': 'padding-left',
-
-  'border-top-left-radius': 'border-top-right-radius',
-  'border-bottom-left-radius': 'border-bottom-right-radius',
-
-  'border-top-right-radius': 'border-top-left-radius',
-  'border-bottom-right-radius': 'border-bottom-left-radius',
-
-  'border-left': 'border-right',
-  'border-right': 'border-left',
-
-  translate: 'translate(50%, -50%);',
-  mirrorY: 'scale(1, -1)',
-
-  'border-right-color': 'border-left-color',
-  'transform-sidebar': 'rotate(-90deg)',
-
-  'flex-flow': 'row-reverse nowrap',
-  row: 'row-reverse',
-
-  'sidebar-close': 'translateX(0)',
-  'sidebar-no-desktop': 'translateX(calc(100%))',
-  '-': '+',
-};
-
-const roundBordersOn = {
-  borderRadius: '15px',
-};
-
-const roundBordersOff: BorderStatus = {
-  borderRadius: '5px',
-};
-
-const shadowOn = {
-  blocksShadows: '0 10px 30px 1px rgba(0, 0, 0, 0.06)',
 };
 
 export type ColorTheme = typeof lightThemeColors;
-export type ShadowTheme = typeof lightThemeShadow;
-export type Direction = typeof ltr;
-export type BorderStatus = typeof roundBordersOn;
-export type ShadowStatus = typeof shadowOn;
 
 export const themes = {
   colors: {
     light: lightThemeColors,
     dark: darkThemeColors,
   },
-  shadow: {
-    light: lightThemeShadow,
-    dark: darkThemeShadow,
-  },
-  directions: {
-    ltr: ltr,
-    rtl: rtl,
-  },
-  borderStatus: {
-    on: roundBordersOn,
-    off: roundBordersOff,
-  },
+
 };
